@@ -184,7 +184,7 @@ sub set_config_by_input {
     if ( eval { $wgd->config_file($webgui_config) } ) {
         return $wgd;
     }
-    my $e = WGDev::X->caught;
+    my $e = WGDev::X->caught || WGDev::X->new($@);
 
     # if that didn't work, try it with .conf appended
     if ( $webgui_config !~ /\Q.conf\E$/msx ) {
