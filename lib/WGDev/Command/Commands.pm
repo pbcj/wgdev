@@ -63,7 +63,7 @@ sub command_abstracts {
         $parser->parse_from_filehandle( $pod_in, $pod_out );
         close $pod_in  or WGDev::X::IO->throw;
         close $pod_out or WGDev::X::IO->throw;
-
+    
         if ( $formatted_pod =~ /^ [:\w]+ \s* - \s* (.+?) \s* $/msx ) {
             $abstracts{$command} = $1;
         }

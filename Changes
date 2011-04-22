@@ -2,6 +2,10 @@ Change log for WGDev
 
 {{$NEXT}}
 
+0.1104210 - Apr 21 2011
+ - Added rm command with recursive support
+ - Added god-me command to shortcut becoming admin
+
 0.1104070 - Apr 07 2011
  - fix -t/--to option on export-branch
  - initial support for WebGUI::Command
